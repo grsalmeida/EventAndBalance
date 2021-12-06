@@ -14,20 +14,8 @@ class ResetTest extends TestCase
      */
     public function test_reset()
     {
-        $response = $this->post('v1/reset');
+        $response = $this->post('reset');
 
         $response->assertStatus(200);
-    }
-
-    /**
-     * test status.
-     *
-     * @return void
-     */
-    public function test_reset_response()
-    {
-        $response = $this->post('v1/reset');
-
-        $response->assertJson(['ok']);
     }
 }
