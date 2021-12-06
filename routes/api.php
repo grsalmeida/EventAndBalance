@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/balance', 'BalanceController@find')->name('find.balance');
 
-Route::get('/event', 'EventController@create')->name('create.event');
+Route::post('/event', 'EventController@create')->name('create.event');
 
+Route::post('/reset', 'ResetController@reset')->name('reset');

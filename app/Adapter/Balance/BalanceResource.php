@@ -2,8 +2,6 @@
 
 namespace App\Adapter\Balance;
 
-use Illuminate\Http\Request;
-
 class BalanceResource
 {
     public $account_id;
