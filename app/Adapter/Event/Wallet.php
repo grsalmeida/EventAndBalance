@@ -6,11 +6,11 @@ class Wallet
 {
     public $id;
 
-    public $amount;
+    public $balance;
 
-    public function __construct(int $id, int $amount)
+    public function __construct(string $id, int $amount)
     {
         $this->id = $id;
-        $this->amount = $amount;
+        $this->balance = $amount;
     }
 }

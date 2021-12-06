@@ -11,8 +11,8 @@ class EventResponse
     public static function deposit($event)
     {
         $destination = new stdClass();
-        $destination->destintion = 'destination';
-        $destination->destintion = new Wallet($event->destination, $event->amount);
+        $destination->destination = 'destination';
+        $destination->destination = new Wallet($event->destination, $event->amount);
         return $destination;
     }
 
@@ -22,8 +22,8 @@ class EventResponse
             $transfer = new stdClass();
             $transfer->origin = 'origin';
             $transfer->origin = new Wallet($event->origin, $event->amount_origin);
-            $transfer->destintion = 'destination';
-            $transfer->destintion = new Wallet($event->destination, $event->amount_destination);
+            $transfer->destination = 'destination';
+            $transfer->destination = new Wallet($event->destination, $event->amount_destination);
             return $transfer;
         }
         return 0;

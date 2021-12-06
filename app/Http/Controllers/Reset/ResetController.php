@@ -17,13 +17,14 @@ class ResetController extends Controller
         $this->event = $event;
     }
 
-    public function reset(): JsonResponse
+    public function reset(): Response
     {
         $this->event->reset();
 
-        return response()->json(
-            'Ok',
+        return response(
+            'OK',
             Response::HTTP_OK
+
         );
     }
 }
